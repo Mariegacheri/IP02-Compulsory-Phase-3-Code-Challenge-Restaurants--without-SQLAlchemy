@@ -35,5 +35,5 @@ class Customer:
         return [customer for customer in cls.all_customers if customer.given_name == name]
 
     def add_review(self, restaurant, rating):
-        review = Review(self, restaurant, rating)
+        review = review(self, restaurant, rating)
         self.reviews.append(review)
